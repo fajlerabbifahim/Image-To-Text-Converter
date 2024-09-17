@@ -6,11 +6,18 @@
     <title>Image To Text converter</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <input type="file" id="image-input" />
-      <button id="extract-btn" onclick="extractText()">Primary</button>
+      <label for="image-input"
+        ><i class="bx bxs-image-add"></i> Choose a Photo</label
+      >
+      <button id="extract-btn" onclick="extractText()">Generate</button>
     </div>
     <div id="output-box"></div>
     <div class="footer">
